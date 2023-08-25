@@ -23,25 +23,13 @@ const Terminal = () => {
     setLoading(true)
     setCommands([...commands, { command, output: "Loading..." }])
 
-    switch (command) {
-      case "help":
-        ouptut = "help command"
-        break
-      case "projects":
-        output = await getProjects()
-        break
-      case "contact": 
-        output = await getContacts()
-        break
-      case "about":
-        output = "about me section"
-        break
-    }
-
-    
-    
-    
-    if (command === "clear") {
+    if (command === "projects") {
+      output = await getProjects()
+    } else if (command === "contacts") {
+      output = await getContacts()
+    } else if (command in CONTENTS) {
+      output = " other commnands"
+    } else if (command === "clear") {
       setLoading(false)
       return setCommands([])
     } else {
