@@ -13,8 +13,8 @@ const Input = ({ command, onsubmit }) => {
 
   return (
     <form onSubmit={(e) => submitHandler(e)}>
-      <label htmlFor="command">
-        <span className="text-orange">λ</span>::{" "}
+      <label htmlFor="command" className="text-blue">
+        <span className="text-orange">λ </span>::{" "}
         <span className="text-purple">~</span>{" "}
         <span className="text-yellow">&gt;&gt;</span>
       </label>

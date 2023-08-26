@@ -1,75 +1,5 @@
-const COMMANDS = [
-  {
-    command: "about",
-    description: "About Me",
-  },
-  {
-    command: "education",
-    description: "My Education",
-  },
-  {
-    command: "skills",
-    description: "My tech skills",
-  },
-  {
-    command: "projects",
-    description: "My Projects",
-  },
-  {
-    command: "contact",
-    description: "Contact Me",
-  },
-  {
-    command: "clear",
-    description: "Clear the terminal screen",
-  },
-]
 
-const getProjects = async () => {
-  const res = await fetch(
-    new Request(createURL("/api/projects"), {
-      method: "GET",
-    })
-  )
 
-  if (res.ok) {
-    const data = await res.json()
-    const projectHTML =
-      `<h3>My Projects</h3>` +
-      data
-        .map(
-          (project) => `<div class="project">
-        <a href="${project.url} target="_blank">
-        <b class="project-name">${project.name}</b></a> - <b>${project.description}</b>
-        </div>`
-        )
-        .join("")
-    return projectHTML
-  } else {
-    const ErrorHTML = `<div class="error">Error fetching projects from API</div>`
-    return ErrorHTML
-  }
-}
-
-const getContacts = async () => {
-  const res = await fetch(
-    new Request(createURL("/api/contacts"), {
-      method: "GET",
-    })
-  )
-
-  if (res.ok) {
-    const data = await res.json()
-    return data
-      .map(
-        (contact) => `<div class="contact">
-        <p class="contact-platform">${contact.platform}</p>
-        <a class="link" href="${contact.url}" target="_blank">${contact.username}</a>
-        </div>`
-      )
-      .join("")
-  }
-}
 
 export const CONTENTS = {
     help: () => {
@@ -102,25 +32,9 @@ export const CONTENTS = {
         <br /><br />
         <b>Others:</b> Git, Linux, AWS, Docker`
     },
-
-    projects: getProjects,
-
-    contact: getContacts,
-
     error: (input) => {
         `<div class="error">sh: Unkonown command: ${input}</div><div class="help-command">See \`help\` for a list of available commands</div>`
     },
     
 }
 
-const getAge = (date) => {
-  const today = new Date()
-  const bday = new Date(date)
-
-  let age = today.getFullYear() - bday.getFullYear()
-  const m = today.getMonth() - bday.getMonth()
-  if (m < 0 || (m === 0 && today.getDate() < bday.getDate())) {
-    age--
-  }
-  return age
-}

@@ -2,7 +2,14 @@
 
 import { useState, useRef } from "react"
 import { CONTENTS } from "@/utils/alfred"
-import { getProjects, getContacts } from "@/utils/getter"
+import {
+  getProjects,
+  getContacts,
+  getAbout,
+  getSkills,
+  getEducation,
+  COMMANDS,
+} from "@/utils/getter"
 import Command from "./Command"
 
 const Terminal = () => {
@@ -23,17 +30,19 @@ const Terminal = () => {
     setLoading(true)
     setCommands([...commands, { command, output: "Loading..." }])
 
-    if (command === "projects") {
+    if(command === "help"){
+      output = "projects contacts about skills education clear"
+    } else if (command === "projects"){
       output = await getProjects()
-    } else if (command === "contacts") {
+    } else if(command === "contact"){
       output = await getContacts()
-    } else if (command in CONTENTS) {
-      output = " other commnands"
+    } else if (command in COMMANDS) {
+      output = COMMANDS[command]()
     } else if (command === "clear") {
       setLoading(false)
       return setCommands([])
     } else {
-      output = CONTENTS.error(escapeHTML(command))
+      output = "not a recognized command"
     }
 
     setLoading(false)
