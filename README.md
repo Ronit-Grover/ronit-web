@@ -1,3 +1,13 @@
+HOSTED AT https://cli-folio.vercel.app/
+commands currenntly working are:
+
+- help
+- about
+- contact
+- projects
+- skills
+- education
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
