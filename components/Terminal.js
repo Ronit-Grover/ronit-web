@@ -5,10 +5,9 @@ import { CONTENTS } from "@/utils/alfred"
 import {
   getProjects,
   getContacts,
-  getAbout,
-  getSkills,
-  getEducation,
   COMMANDS,
+  error,
+  getHelp,
 } from "@/utils/getter"
 import Command from "./Command"
 
@@ -30,11 +29,11 @@ const Terminal = () => {
     setLoading(true)
     setCommands([...commands, { command, output: "Loading..." }])
 
-    if(command === "help"){
-      output = "projects contacts about skills education clear"
-    } else if (command === "projects"){
+    if (command === "help") {
+      output = getHelp()
+    } else if (command === "projects") {
       output = await getProjects()
-    } else if(command === "contact"){
+    } else if (command === "contact") {
       output = await getContacts()
     } else if (command in COMMANDS) {
       output = COMMANDS[command]()
@@ -42,7 +41,7 @@ const Terminal = () => {
       setLoading(false)
       return setCommands([])
     } else {
-      output = "not a recognized command"
+      output = error(command)
     }
 
     setLoading(false)

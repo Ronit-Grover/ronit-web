@@ -25,7 +25,6 @@ const commands = [
   },
 ]
 
-
 export const getProjects = async () => {
   const res = await fetch("/api/projects")
 
@@ -56,8 +55,8 @@ export const getContacts = async () => {
     return data
       .map(
         (contact) => `<div class="contact">
-          <p class="contact-platform">${contact.platform}</p>
-          <a class="link" href="${contact.url}" target="_blank">${contact.username}</a>
+          <a class="link" href="${contact.url}" target="_blank"> <p class="contact-platform">${contact.platform}</p>
+          <b>${contact.username}</b></a>
           </div>`
       )
       .join("")
@@ -90,8 +89,19 @@ export const getEducation = () => {
   return `I am currently pursuing my B.E. in Computer Science from Thapar Institute of Engineering and Technology, Patiala. and I am a graduate from D.A.V. Public School, Gurgaon`
 }
 
-export const error = () => {
+export const error = (input) => {
   return `<div class="error">sh: Unkonown command: ${input}</div><div class="help-command">See \`help\` for a list of available commands</div>`
+}
+
+export const getHelp = () => {
+  return commands.map(
+    (command) => `<div style="display: flex; justify-content: space-between;">
+      <p style="font-size: 16px">${command.command}</p>
+      <p>${command.description}</p>
+    </div>`
+  ).join("") +
+  `<br />
+    <div class="command">Type one of the above to view. For eg. <span style="color: var(--secondary)">about</span></div>`
 }
 
 export const COMMANDS = {

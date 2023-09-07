@@ -17,6 +17,11 @@ export const GET = () => {
       username: "hdawar16@gmail.com",
       url: "mailto:hdawar16@gmail.com",
     },
+    {
+      platform: "X",
+      username: "HarshDawar2",
+      url: "https://google.com",
+    },
   ]
 
   return NextResponse.json(contacts, {
