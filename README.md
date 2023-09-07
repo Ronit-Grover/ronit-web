@@ -8,6 +8,12 @@ commands currenntly working are:
 - skills
 - education
 
+TODO:
+[x] get error and help working
+[] scroll to bottom
+[] replace dummy data
+[] add custom domain 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
