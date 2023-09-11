@@ -15,8 +15,8 @@ export const GET = () => {
       github: "https://github.com/HARSH16DAWAR/CLOUD/tree/main/Resume_Hosting",
     },
     {
-      name: "Expense Tracker",
-      description: "A simple expense tracker app built using ReactJS",
+      name: "Din",
+      description: "A WYSIWYG journaling app with AI based mood analysis and tracking",
       url: "https://github.com/HARSH16DAWAR",
       github: "https://google.com"
     },

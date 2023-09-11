@@ -23,6 +23,10 @@ const commands = [
     command: "clear",
     description: "Clear the terminal screen",
   },
+  {
+    command: "resume",
+    description: "View my resume",
+  }
 ]
 
 export const getProjects = async () => {

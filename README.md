@@ -10,7 +10,9 @@ commands currenntly working are:
 
 TODO:
 [x] get error and help working
+[] get Resume command working and make it go to resume
 [] scroll to bottom
+[] color the links properly (make them more visible)
 [] replace dummy data
 [] add custom domain 
 
