@@ -9,12 +9,13 @@ commands currenntly working are:
 - education
 
 TODO:
-[x] get error and help working
-[] get Resume command working and make it go to resume
-[] scroll to bottom
-[] color the links properly (make them more visible)
-[] replace dummy data
-[] add custom domain 
+
+- ~~get error and help working~~
+- ~~get Resume command working and make it go to resume~~
+- scroll to bottom
+- ~~color the links properly (make them more visible)~~
+- ~~replace dummy data~~
+- add custom domain
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
