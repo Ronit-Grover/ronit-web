@@ -17,9 +17,13 @@ export const GET = () => {
     {
       name: "Din",
       description: "A WYSIWYG journaling app with AI based mood analysis and tracking",
-      url: "https://github.com/HARSH16DAWAR",
-      github: "https://google.com"
+      github: "https://github.com/HARSH16DAWAR/din",
     },
+    {
+      name: "TextGenie",
+      description: "A text generation model trained on classic literature by Melviille, Plato and Eliot" ,
+      github: "https://github.com/HARSH16DAWAR/TextGenie",
+    }
   ]
 
   return NextResponse.json(projects)

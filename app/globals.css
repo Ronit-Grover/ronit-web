@@ -31,7 +31,9 @@ body {
 }
 
 .contact,
-.command {
+.command,
+.skill,
+.project {
   display: flex;
   justify-content: space-between;
 }
@@ -51,4 +53,24 @@ body {
 
 .terminal {
   -ms-overflow-style: none;
+}
+
+.help-command {
+  @apply font-bold text-orange;
+}
+
+.external-link {
+  @apply text-yellow font-semibold;
+}
+
+.external-link:hover {
+  @apply underline;
+}
+
+.skill-group {
+  @apply text-yellow font-semibold;
+}
+
+.project__name{
+  @apply text-green font-semibold;
 }

@@ -18,9 +18,9 @@ export const GET = () => {
       url: "mailto:hdawar16@gmail.com",
     },
     {
-      platform: "X",
-      username: "HarshDawar2",
-      url: "https://google.com",
+      platform: "twitch.tv",
+      username: "harsh_dawar",
+      url: "https://www.twitch.tv/harsh_dawar",
     },
   ]
 
