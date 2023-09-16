@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useRef } from "react"
-import { CONTENTS } from "@/utils/alfred"
 import {
   getProjects,
   getContacts,

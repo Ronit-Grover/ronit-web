@@ -7,8 +7,9 @@ const Input = ({ command, onsubmit }) => {
 
   const submitHandler = (e) => {
     e.preventDefault()
+    const trimmedCommand = _command.trim()
     setCommand("")
-    return onsubmit(_command)
+    return onsubmit(trimmedCommand)
   }
 
   return (
@@ -24,7 +25,7 @@ const Input = ({ command, onsubmit }) => {
         className="bg-transparent border-0 outline-none pl-[0.375rem] text-green min-w-[calc(100%-100px)]"
         name="command"
         value={_command}
-        onChange={(e) => setCommand(e.target.value)}
+        onChange={(e) => setCommand(e.target.value.toLowerCase())}
         disabled={command ? true : false}
         ref={(input) => input && !command && input.focus()}
         autoFocus={command === ""}
