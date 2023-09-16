@@ -15,7 +15,7 @@ TODO:
 - scroll to bottom
 - ~~color the links properly (make them more visible)~~
 - ~~replace dummy data~~
-- add custom domain
+- ~~add custom domain~~
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

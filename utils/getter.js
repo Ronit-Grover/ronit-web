@@ -133,7 +133,7 @@ export const getHelp = () => {
       )
       .join("") +
     `<br />
-    <div class="command">Type one of the above to view. For eg. <span class="help-command">about</span></div>`
+    <div >Type one of the above to view. For eg. <span class="help-command">about</span></div>`
   )
 }
 
