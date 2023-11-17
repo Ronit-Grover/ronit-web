@@ -93,27 +93,29 @@ export const getContacts = async () => {
 }
 
 export const getAbout = () => {
-  return `Hi! I'm Harsh Dawar, a ${getAge(
-    "2002/01/16"
-  )} year old software developer from India.
+  return `Greetings! I'm Ronit Grover, a ${getAge(
+    "2001/12/11"
+  )} year old software developer hailing from India.
   <br />
-  I'm in my last year of Computer Science and Engineering at <a href="https://thapar.edu/" class="external-link" target="_blank">TIET</a> in Patiala, and I'm very interested in technology. I finished high school at the <a href="http://dav14gurgaon.com/" class="external-link" target="_blank">D.A.V. Public School</a> in Gurgaon. I love to keep up with the latest tech trends and am always looking for new creative ideas to try. As I move towards new opportunities, I'm excited to use my skills to help people. Feel free to get in touch if you want to make links or work together. Let's look at the options together!`
+  Currently in the final year of my Computer Science Engineering program at Manipal University Jaipur, I am passionate about crafting innovative solutions at the intersection of technology and creativity. Presently, I contribute my skills as an AI Automation Engineer at Juggernot AI, where I am engaged in cutting-edge projects that push the boundaries of artificial intelligence. Beyond my academic pursuits and professional endeavors, my curiosity extends to the dynamic realms of technology and aviation. As a certified ethical hacker, I relish the challenges of the cybersecurity landscape, embodying an insatiable appetite for continuous learning. Join me on this exciting journey as I navigate the ever-evolving landscape of software development, AI, and cybersecurity.
+  <br />
+  Feel welcome to contact me if you're interested in creating connections or exploring collaboration opportunities. Let's explore possibilities together!`
 }
 
 export const getSkills = () => {
   return `I have experience working with the following technologies:
   <br />
-  <b class="skill-group">Programming Languages:</b>C/C++, JavaScript, TypeScript, Python
+  <b class="skill-group">Programming Languages:</b>Shell, C/C++, Python, HTML, CSS
   <br />
-  <b class="skill-group">Frontend:</b> ReactJS, NextJS, HTML, CSS, Tailwind
+  <b class="skill-group">Tools:</b>Kali, Docker, Kubernetes, Jenkins, Git, Figma
   <br />
-  <b class="skill-group">Database:</b> Oracle,MySQL, MongoDB
+  <b class="skill-group">Cloud/Database:</b> Oracle, GCP, MySQL
   <br />
-  <b class="skill-group">Others:</b> Git, Linux, AWS, Docker`
+  <b class="skill-group">Operating Systems:</b> Windows, Linux, MacOS`
 }
 
 export const getEducation = () => {
-  return `In my final year at <a href="https://thapar.edu/" class="external-link" target="_blank">Thapar Institute of Engineering and Technology (TIET)</a> in Patiala, I have achieved a CGPA of 9.33 while majoring in Computer Science. I graduated from <a href="http://dav14gurgaon.com/" class="external-link" target="_blank">D.A.V. Public School</a>, Gurgaon with a 92% in Class 12 before beginning my current endeavours. I had previously achieved a 96.6% in Class 10 during my time at the same school. `
+  return `In my final year at <a href="https://jaipur.manipal.edu/" class="external-link" target="_blank">Manipal University Jaipur (MUJ)</a> in Jaipur, I have achieved a CGPA of 8.48 while majoring in Computer Science. I graduated from <a href="http://dav14gurgaon.com/" class="external-link" target="_blank">D.A.V. Public School</a>, Gurgaon with an 88% in Class 12 before beginning my current endeavors. I had previously achieved a 91.4% in Class 10 during my time at the same school.`
 }
 
 export const error = (input) => {
@@ -138,7 +140,7 @@ export const getHelp = () => {
 }
 
 export const redirectResume = () => {
-  window.open("https://harsh-resu.me", "_blank")
+  window.open("https://drive.google.com/file/d/19RKJX56TsFcxFVAjSGNi8slyD4T8nDnM/view?usp=sharing", "_blank")
   return ""
 }
 
