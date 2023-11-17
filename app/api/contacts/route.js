@@ -4,23 +4,23 @@ export const GET = () => {
   const contacts = [
     {
       platform: "LinkedIn",
-      username: "Harsh Dawar",
-      url: "https://www.linkedin.com/in/harsh-dawar/",
+      username: "Ronit Grover",
+      url: "https://www.linkedin.com/in/ronitgrover/",
     },
     {
       platform: "GitHub",
-      username: "HARSH16DAWAR",
-      url: "https://github.com/HARSH16DAWAR",
+      username: "Ronit-Grover",
+      url: "https://github.com/Ronit-Grover",
     },
     {
       platform: "email",
-      username: "hdawar16@gmail.com",
-      url: "mailto:hdawar16@gmail.com",
+      username: "groverronit99@gmail.com",
+      url: "mailto:groverronit99@gmail.com",
     },
     {
-      platform: "twitch.tv",
-      username: "harsh_dawar",
-      url: "https://www.twitch.tv/harsh_dawar",
+      platform: "Twitter",
+      username: "RonitGrover9",
+      url: "https://x.com/RonitGrover9?t=ED2t9e9oj5Zyydh-B3QzHA&s=09",
     },
   ]
 
