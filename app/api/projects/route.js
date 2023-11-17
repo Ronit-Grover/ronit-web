@@ -3,26 +3,16 @@ import { NextResponse } from "next/server"
 export const GET = () => {
   const projects = [
     {
-      name: "Portfolio",
-      description: "My portfolio website",
-      url: "https://cli-folio.vercel.app",
-      github: "https://github.com/HARSH16DAWAR/cli-folio",
+      name: "Web Based Password Manager",
+      description: "A web-based password manager assisting the users to safely store their passwords.",
     },
     {
-      name: "AWS resume hosting",
-      description: "My resume hosted on AWS using S3, CloudFront and Route53",
-      url: "https://harsh-resu.me",
-      github: "https://github.com/HARSH16DAWAR/CLOUD/tree/main/Resume_Hosting",
+      name: "Secured IoT Application for Health Care",
+      description: "Implemented AES-256 for secure data transfer from device to database (tested with Google Firebase) using ESP-32 and ESP-8266 microcontrollers. <br />Central goal: prevent Man-in-the-Middle attacks, safeguarding patient data integrity from unauthorized tampering.",
     },
     {
-      name: "Din",
-      description: "A WYSIWYG journaling app with AI based mood analysis and tracking",
-      github: "https://github.com/HARSH16DAWAR/din",
-    },
-    {
-      name: "TextGenie",
-      description: "A text generation model trained on classic literature by Melviille, Plato and Eliot" ,
-      github: "https://github.com/HARSH16DAWAR/TextGenie",
+      name: "Quadcopter",
+      description: "Designed and developed a fully functional remote-enabled quadcopter with a maximum height capability of 200m and a 45-minute battery life per charge. Utilized a 3D printer to fabricate quadcopter parts, programmed the device, and assembled it. Integrated a detachable camera for capturing stunning shots." ,
     }
   ]
 
