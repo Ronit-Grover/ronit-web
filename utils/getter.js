@@ -97,7 +97,7 @@ export const getAbout = () => {
     "2001/12/11"
   )} year old software developer hailing from India.
   <br />
-  Currently in the final year of my Computer Science Engineering program at Manipal University Jaipur, I am passionate about crafting innovative solutions at the intersection of technology and creativity. Presently, I contribute my skills as an AI Automation Engineer at Juggernot AI, where I am engaged in cutting-edge projects that push the boundaries of artificial intelligence. Beyond my academic pursuits and professional endeavors, my curiosity extends to the dynamic realms of technology and aviation. As a certified ethical hacker, I relish the challenges of the cybersecurity landscape, embodying an insatiable appetite for continuous learning. Join me on this exciting journey as I navigate the ever-evolving landscape of software development, AI, and cybersecurity.
+  Currently in the final semester of my Computer Science Engineering program at Manipal University Jaipur, I am passionate about crafting innovative solutions at the intersection of technology and creativity. Presently, I contribute my skills as a Network Digitization Engineer at Bharti Airtel. I am engaged in cutting-edge projects that push the boundaries of Alarms Monitoring System in Telecom Components present in Network Operations Centre. Beyond my academic pursuits and professional endeavors, my curiosity extends to the dynamic realms of technology and aviation. As a certified ethical hacker, I relish the challenges of the cybersecurity landscape, embodying an insatiable appetite for continuous learning. Join me on this exciting journey as I navigate the ever-evolving landscape of software development, AI, and cybersecurity.
   <br />
   Feel welcome to contact me if you're interested in creating connections or exploring collaboration opportunities. Let's explore possibilities together!`
 }
@@ -115,7 +115,7 @@ export const getSkills = () => {
 }
 
 export const getEducation = () => {
-  return `In my final year at <a href="https://jaipur.manipal.edu/" class="external-link" target="_blank">Manipal University Jaipur (MUJ)</a> in Jaipur, I have achieved a CGPA of 8.48 while majoring in Computer Science. I graduated from <a href="http://dav14gurgaon.com/" class="external-link" target="_blank">D.A.V. Public School</a>, Gurgaon with an 88% in Class 12 before beginning my current endeavors. I had previously achieved a 91.4% in Class 10 during my time at the same school.`
+  return `In my final year at <a href="https://jaipur.manipal.edu/" class="external-link" target="_blank">Manipal University Jaipur (MUJ)</a> in Jaipur, I have achieved a CGPA of 8.18 while majoring in Computer Science. I graduated from <a href="http://dav14gurgaon.com/" class="external-link" target="_blank">D.A.V. Public School</a>, Gurgaon with an 88% in Class 12 before beginning my current endeavors. I had previously achieved a 91.4% in Class 10 during my time at the same school.`
 }
 
 export const error = (input) => {
