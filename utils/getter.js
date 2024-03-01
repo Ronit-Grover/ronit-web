@@ -140,7 +140,7 @@ export const getHelp = () => {
 }
 
 export const redirectResume = () => {
-  window.open("https://drive.google.com/file/d/140SvYwXHudT1ge5mf6Qvooo_K0IJpcpI/view?usp=drive_link", "_blank")
+  window.open("https://drive.google.com/file/d/1j3o-DyKgV_zYwZDJ2Slsy4PE1Tr_QkRj/view?usp=sharing", "_blank")
   return ""
 }
 
